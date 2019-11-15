@@ -1,4 +1,4 @@
-const { GraphQLID, GraphQLNoneNull } = require('graphql')
+const { GraphQLID, GraphQLNonNull } = require('graphql')
 const EventType = require('../types/event')
 
 module.exports = {
@@ -6,7 +6,7 @@ module.exports = {
     args: {
         id: {
             name: 'id',
-            type: new GraphQLNoneNull(GraphQLID)
+            type: new GraphQLNonNull(GraphQLID)
         }
     },
     resolve: (root, args) => {

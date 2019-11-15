@@ -21,5 +21,5 @@ server.use('/graphql', graphqlHTTP((req, res, qql) => ({
 //starting server
 server.listen(PORT, err => {
     if(err) throw err 
-    console.log(`Rady on PORT ${PORT}`)
+    console.log(`Ready on PORT ${PORT}`)
 })
